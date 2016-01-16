@@ -1,47 +1,30 @@
-react-hot-boilerplate
-=====================
+## Frontend
 
-The minimal dev environment to enable live-editing React components.
+Welcome to the frontend. Our application consists of a separate frontend and
+backend. They are mostly independent and communicate through a RESTful API.
 
-### Usage
+### Getting started
 
+Start your console and switch to the frontend folder. Before starting the App
+you have to install the dependencies with npm:
 ```
 npm install
-npm start
-open http://localhost:3000
 ```
 
-Now edit `src/App.js`.  
-Your changes will appear without reloading the browser like in [this video](http://vimeo.com/100010922).
-
-### Linting
-
-This boilerplate project includes React-friendly ESLint configuration.
-
+Now you can start the development server:
 ```
-npm run lint
+node server.js
 ```
 
-### Using `0.0.0.0` as Host
+You can now view the application in your browser on port 3000
+(type `localhost:3000` in the URL bar).
+Modules are hot reloaded which means you can see your saved changes without
+refreshing the browser window. For more information on the topic see
+- [Webpack Hot Module Replacement Documentation](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack)
+- [React Hot Loader](https://github.com/gaearon/react-hot-loader)
 
-You may want to change the host in `server.js` and `webpack.config.js` from `localhost` to `0.0.0.0` to allow access from same WiFi network. This is not enabled by default because it is reported to cause problems on Windows. This may also be useful if you're using a VM.
+### Taking the challenges
 
-### Missing Features
-
-This boilerplate is purposefully simple to show the minimal configuration for React Hot Loader. For a real project, you'll want to add a separate config for production with hot reloading disabled and minification enabled. You'll also want to add a router, styles and maybe combine dev server with an existing server. This is out of scope of this boilerplate, but you may want to look into [other starter kits](https://github.com/gaearon/react-hot-loader/blob/master/docs/README.md#starter-kits).
-
-### Dependencies
-
-* React
-* Webpack
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
-* [babel-loader](https://github.com/babel/babel-loader)
-* [react-hot-loader](https://github.com/gaearon/react-hot-loader)
-
-### Resources
-
-* [Demo video](http://vimeo.com/100010922)
-* [react-hot-loader on Github](https://github.com/gaearon/react-hot-loader)
-* [Integrating JSX live reload into your workflow](http://gaearon.github.io/react-hot-loader/getstarted/)
-* [Troubleshooting guide](https://github.com/gaearon/react-hot-loader/blob/master/docs/Troubleshooting.md)
-* Ping dan_abramov on Twitter or #reactjs IRC
+We created challenges for you to work on. You can find them in the subfolder
+`challenges/`. The challenges build on top of each other so make sure to start
+with the first task.  
