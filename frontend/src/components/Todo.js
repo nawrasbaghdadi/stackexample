@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react';
-import Checkbox from 'material-ui/lib/checkbox';
+import { Input } from 'react-bootstrap';
 
-const Todo = (props) => (
-  <Checkbox
+const Todo = ( props ) => (
+  <Input
+    type="checkbox"
     label={ props.text }
     onChange={ props.done ? props.onUndone : props.onDone }
-    defaultChecked={ props.done }
+    checked={ props.done }
   />
 );
-
 
 Todo.propTypes = {
   text: PropTypes.string.isRequired,

@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Paper from 'material-ui/lib/paper';
-import TextField from 'material-ui/lib/text-field';
-import RaisedButton from 'material-ui/lib/raised-button';
+import { Panel, Input } from 'react-bootstrap';
 
 import Todo from './Todo';
-import { createTodo } from '../actions/ActionCreators';
+import { createTodo, updateInput } from '../actions/ActionCreators';
 
-let paperStyle = {
+let styles = {
   width: '80%',
   maxWidth: 500,
-  margin: '40px auto',
-  padding: 20,
-  paddingTop: 5,
+  margin: '10px auto',
 };
 
 class App extends Component {
@@ -21,12 +17,17 @@ class App extends Component {
     super( props );
 
     this.handleNewTodo = this.handleNewTodo.bind( this );
+    this.handleInputChange = this.handleInputChange.bind( this );
   }
 
-  handleNewTodo(event) {
+  handleNewTodo( event ) {
     event.preventDefault();
-    this.props.createTodo( this.refs.textField.getValue() );
-    this.refs.textField.clearValue();
+    this.props.createTodo( this.props.input );
+    this.props.updateInput('');
+  }
+
+  handleInputChange() {
+    this.props.updateInput( this.refs.textField.getValue() );
   }
 
   render() {
@@ -38,22 +39,23 @@ class App extends Component {
       );
 
     return (
-      <Paper style={ paperStyle } >
-        <form onSubmit={ this.handleNewTodo }>
-          <TextField
-            hintText="What to do?"
-            floatingLabelText="New Todo"
+      <Panel header={ <h3>Kiron Todo App</h3> } style={ styles } >
+        <form onSubmit={ this.handleNewTodo } >
+          <Input
             ref="textField"
-            fullWidth
+            type="text"
+            placeholder="Enter new todo"
+            value={ this.props.input }
+            onChange={ this.handleInputChange }
           />
         </form>
         { todos }
-      </Paper>
+      </Panel>
     );
   }
 }
 
 export default connect(
-  state => ({ todos: state.todos }),
-  { createTodo }
+  state => state,
+  { createTodo, updateInput }
 )(App);

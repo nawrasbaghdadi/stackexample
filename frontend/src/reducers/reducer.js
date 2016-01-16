@@ -1,6 +1,7 @@
-import { NEW_TODO } from '../constants/ActionTypes';
+import { NEW_TODO, UPDATE_INPUT } from '../constants/ActionTypes';
 
 const initialState = {
+  input: '',
   todos: [
     {
       text: 'My first todo',
@@ -11,16 +12,19 @@ const initialState = {
 
 export default function( state = initialState, action ) {
   switch( action.type ) {
+  case UPDATE_INPUT:
+    return {
+      ...state,
+      input: action.text,
+    }
   case NEW_TODO:
-    const newTodo = {
-      text: action.text,
-      done: false,
-    };
-
     return {
       ...state,
       todos: [
-        newTodo,
+        {
+          text: action.text,
+          done: false,
+        },
         ...state.todos,
       ]
     }
