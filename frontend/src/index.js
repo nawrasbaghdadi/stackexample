@@ -8,10 +8,6 @@ import { Provider } from 'react-redux';
 import App from './components/App';
 import reducer from './reducers/reducer';
 
-// dependencyy of material-ui
-import reactTapEventPlugin from 'react-tap-event-plugin';
-reactTapEventPlugin();
-
 const store = createStore(reducer);
 
 ReactDOM.render(
