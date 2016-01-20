@@ -8,8 +8,11 @@ Welcome to the slimmed-down version of our stack.
 Clone the repository, install and go!
 
 `git clone git@github.com:kironuniversity/stackexample.git`
+
 `cd stackexample/frontend`
+
 `npm install`
+
 `node server.js`
 
 Navigate to [localhost:3000](http://localhost:3000/) and you should see the app already. 
