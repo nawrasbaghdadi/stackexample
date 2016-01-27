@@ -28,3 +28,6 @@ refreshing the browser window. For more information on the topic see
 We created challenges for you to work on. You can find them in the subfolder
 `challenges/`. The challenges build on top of each other so make sure to start
 with the first task.  
+
+- [Challenge 1: Redux](https://github.com/kironuniversity/stackexample/blob/master/frontend/challenges/challenge-1.md)
+- More coming soon...
