@@ -19,4 +19,6 @@ From here, check out the README for setup information and more on our tech.
 
 Here is some information to help you get rolling along, whether you are doing backend or frontend. There are lots of ways to program javascript. We are following the [AirBnB Javascript Style Guide](https://github.com/airbnb/javascript), this should be your reference. We are coding in ES6. 
 
-Most of our programmers use the light, fast and efficient text editor [Atom](https://atom.io/). Atom has an ES6 Linter that can be set using the AirBnB guide. After setting up Atom, you will want to [add the packages](https://atom.io/docs/v1.2.4/using-atom-atom-packages) `linter`, `linter-eslint`, and `react`
+We recommend using the light, fast and efficient text editor [Atom](https://atom.io/). Atom has an ES6 Linter that can be set using the AirBnB guide. After setting up Atom, you will want to [add the packages](https://atom.io/docs/v1.2.4/using-atom-atom-packages) `linter`, `linter-eslint`, and `react`. 
+
+We also recommend developing in Google Chrome, using the React Developer Tools add on. 
