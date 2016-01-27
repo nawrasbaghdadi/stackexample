@@ -1,24 +1,22 @@
 # Kiron's Student Platform Stack
-Welcome to the slimmed-down version of our technology stack.
-This repository serves as a playground for you to get comfortable with the libraries and frameworks used at Kiron's product called _Student Platform_.
+Welcome to the slimmed-down version of Kiron's technology stack. Kiron is all offering access to higher education to refugees wordlwdie. We are a non-profit based in Berlin, Germany. Our tech team is global, and we are always looking for volunteers to help out on projects. This repository serves as a playground for you to get comfortable with the libraries and frameworks used at Kiron's product called _Student Platform_.
 
 For more information on what we do and what Kiron Open Higher Education is all about visit our [website](https://kiron.university).
 
+The Kiron Student Platform is built on a demanding, modern javascript  stack to provide a top-notch experience in a single page app. The frontend is React.js, the backend is the Node.js based Sails. We use Redux to manage the state. There are a number of other libraries built in, like Bootstrap. This stack example represents a bare-bones version of our stack. At the moment there is only a frontend here, though we are building a backend as well. The two are independent of each other; if you are interested in the frontend only, just go straight there. 
+
 ### Quickstart Guide.
 
-If you have a developer's environment already, know the tools and want to jump in than just clone the repository, install and go!
+If you have a developer's environment already, know the tools and want to jump in than just clone the repository, install and go! 
 
 `git clone git@github.com:kironuniversity/stackexample.git`
 
 `cd stackexample/frontend`
 
-`npm install`
-
-`node server.js`
-
-Navigate to [localhost:3000](http://localhost:3000/) and you should see the app already.
-
-Please keep reading below to learn more about our technologies and setup.
+From here, check out the README for setup information and more on our tech. 
 
 ### Introduction to the Kiron Stack: Getting Setup
-To get started with Kiron, you will need to set up a number of things.
+
+Here is some information to help you get rolling along, whether you are doing backend or frontend. There are lots of ways to program javascript. We are following the [AirBnB Javascript Style Guide](https://github.com/airbnb/javascript), this should be your reference. We are coding in ES6. 
+
+Most of our programmers use the light, fast and efficient text editor [Atom](https://atom.io/). Atom has an ES6 Linter that can be set using the AirBnB guide. After setting up Atom, you will want to [add the packages](https://atom.io/docs/v1.2.4/using-atom-atom-packages) `linter`, `linter-eslint`, and `react`
