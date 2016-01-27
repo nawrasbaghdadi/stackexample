@@ -19,18 +19,18 @@ To setup a new connection to the store Redux needs
 - a place in the state tree to store the information
 Make sure to create every piece of code mentioned above.
 
-### What's different in the Kiron Platform
+### What's different in the Kiron Student Platform
 
 #### Multiple reducers
 
-On the Kiron Platform there are multiple reducers working a the same time. This
+On the Student Platform there are multiple reducers working a the same time. This
 is called reducer composition. Every subtree in the state has its own reducer.
 Since the state tree is structured into different subjects reducers usually
 handle all the actions related to one job for example the account management.
 
 #### Asynchronous actions
 
-The Kiron Platform is connected to a backend and most actions communicate
+The Student Platform is connected to a backend and most actions communicate
 with our RESTful API. We use the middleware
 [redux-thunk](https://github.com/gaearon/redux-thunk) to dispatch async actions.
 This way all asynchronous logic is handled in the action creators and the
