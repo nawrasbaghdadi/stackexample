@@ -26,3 +26,16 @@ Here is some information to help you get rolling along, whether you are doing ba
 We recommend using the light, fast and efficient text editor [Atom](https://atom.io/). Atom has an ES6 Linter that can be set using the AirBnB guide. After setting up Atom, you will want to [add the packages](https://atom.io/docs/v1.2.4/using-atom-atom-packages) `linter`, `linter-eslint`, and `react`. 
 
 We also recommend developing in Google Chrome, using the React Developer Tools add on. 
+
+#### Learning Resources for our Stack 
+
+If you are new to React.js, have a look at [their website](https://react-bootstrap.github.io/). There are a handful of other resources around, too. 
+
+If you are new to Redux, have a look at this [tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html), for instance 
+
+If you are new to GitHub, there are tons of tutorials out there. 
+
+Don't forget to have fun! 
+
+
+
