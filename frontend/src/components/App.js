@@ -17,8 +17,8 @@ class App extends Component {
   static propTypes = {
     todos: PropTypes.arrayOf(Todo.propTypes).isRequired,
     input: PropTypes.string.isRequired,
-    updateInput: PropTypes.function.isRequired,
-    createTodo: PropTypes.function.isRequired,
+    updateInput: PropTypes.func.isRequired,
+    createTodo: PropTypes.func.isRequired,
   };
 
   constructor(props) {
