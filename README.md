@@ -13,7 +13,11 @@ If you have a developer's environment already, know the tools and want to jump i
 
 `cd stackexample/frontend`
 
+The best thing to do is fork the code in Git for yourself. 
+
 From here, check out the README for setup information and more on our tech. 
+
+When you are all done, we've got one more [quick survey](https://docs.google.com/a/kiron.university/forms/d/1NLAa7N6XkmyEC489pZKGnMjAR6wM5ZOoeCdLlddr1Ks/) for you - please fill it out, then we'll have a look at your code and get back to you as soon as we can! 
 
 ### Introduction to the Kiron Stack: Getting Setup
 
