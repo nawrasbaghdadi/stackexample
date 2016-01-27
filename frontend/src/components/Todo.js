@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Input } from 'react-bootstrap';
 
-const Todo = ( props ) => (
+const Todo = props => (
   <Input
     type="checkbox"
     label={ props.text }

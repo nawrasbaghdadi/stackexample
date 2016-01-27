@@ -6,29 +6,29 @@ const initialState = {
     {
       text: 'My first todo',
       done: true,
-    }
-  ]
+    },
+  ],
 };
 
-export default function( state = initialState, action ) {
-  switch( action.type ) {
-  case UPDATE_INPUT:
-    return {
-      ...state,
-      input: action.text,
-    }
-  case NEW_TODO:
-    return {
-      ...state,
-      todos: [
-        {
-          text: action.text,
-          done: false,
-        },
-        ...state.todos,
-      ]
-    }
-  default:
-    return state;
+export default function (state = initialState, action) {
+  switch (action.type) {
+    case UPDATE_INPUT:
+      return {
+        ...state,
+        input: action.text,
+      };
+    case NEW_TODO:
+      return {
+        ...state,
+        todos: [
+          {
+            text: action.text,
+            done: false,
+          },
+          ...state.todos,
+        ],
+      };
+    default:
+      return state;
   }
 }
