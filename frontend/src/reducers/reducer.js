@@ -1,4 +1,4 @@
-import { NEW_TODO, UPDATE_INPUT } from '../constants/ActionTypes';
+import { NEW_TODO, UPDATE_INPUT , TOGGLE_TODO } from '../constants/ActionTypes';
 
 const initialState = {
   input: '',
@@ -28,6 +28,8 @@ export default function (state = initialState, action) {
           ...state.todos,
         ],
       };
+      case 'TOGGLE_TODO':
+    console.log('toggle-todo');
     default:
       return state;
   }

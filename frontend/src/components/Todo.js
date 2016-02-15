@@ -3,12 +3,11 @@ import { Input } from 'react-bootstrap';
 
 const Todo = props => (
   <Input
+    id = {props.id}
     type="checkbox"
     label={ props.text }
-    onChange={ props.done ? props.onUndone : props.onDone }
-    checked={ props.done }
-  />
-);
+    onClick={ onTodoClick}
+    checked={ props.done ? props.onUndone : props.onDone  } />);
 
 Todo.propTypes = {
   text: PropTypes.string.isRequired,
@@ -16,5 +15,7 @@ Todo.propTypes = {
   onDone: PropTypes.func,
   onUndone: PropTypes.func,
 };
-
+function onTodoClick() {
+  $r.store.dispatch({type:'TOGGLE_TODO'});
+}
 export default Todo;
